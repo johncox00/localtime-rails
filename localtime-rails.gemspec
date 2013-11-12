@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["john@mach19.com"]
   spec.description   = %q{Localize server times in your view.}
   spec.summary       = %q{Easy way to localize times in a UI by implementing a .local-time class.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/johncox00/localtime-rails"
   spec.license       = "MIT"
 
   spec.files         = Dir["{lib,vendor}/**/*"] + ["README.md"]#`git ls-files`.split($/)
