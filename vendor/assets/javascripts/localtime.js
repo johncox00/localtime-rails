@@ -10,11 +10,15 @@ function localizeTime(){
   $('.local-time').each(function() {
     // localize servertime of the record and make it a Date Object
     var serverTime = $(this).text();
-    var newTimeObject = new Date(serverTime);
-    if (isNaN(newTimeObject.getFullYear())) {
+    var localizedTime = new Date(serverTime);
+    if (isNaN(localizedTime.getFullYear())) {
       continue;
     }
-    var localizedTime = new Date(newTimeObject - utcOffset);
+    // var newTimeObject = new Date(serverTime);
+    // if (isNaN(newTimeObject.getFullYear())) {
+    //   continue;
+    // }
+    // var localizedTime = new Date(newTimeObject - utcOffset);
 
     //Get displayable data from the Date Object
     var year = localizedTime.getFullYear();
