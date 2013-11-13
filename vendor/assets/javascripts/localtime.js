@@ -5,14 +5,14 @@ $(document).ready(function(){
 $(document).on('page:load', localizeTime);
 
 function localizeTime(){
+  var now = new Date();
+  var utcOffset = now.getTimezoneOffset() * 1000 * 60;
   $('.local-time').each(function() {
     // localize servertime of the record and make it a Date Object
-    var now = new Date();
-    var utcOffset = now.getTimezoneOffset() * 1000 * 60;
     var serverTime = $(this).text();
     var newTimeObject = new Date(serverTime);
     if (isNaN(newTimeObject.getFullYear())) {
-      return;
+      continue;
     }
     var localizedTime = new Date(newTimeObject - utcOffset);
 
