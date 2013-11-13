@@ -52,6 +52,10 @@ If you have some sort of asynchronous Javascript that's executing after the init
 
     localizeTime();
 
+## Sample App
+
+You can see a sample rails app here: [localtime-example](https://github.com/johncox00/localtime-example "localtime-rails")
+
 ## Contributing
 
 1. Fork it
