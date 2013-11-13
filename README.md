@@ -16,6 +16,10 @@ Or install it yourself as:
 
     $ gem install localtime-rails
 
+For rails, add this line to application.js:
+
+    //= require localtime
+
 ## Usage
 
 Let's say you're listing users...
